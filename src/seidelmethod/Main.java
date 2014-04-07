@@ -64,6 +64,13 @@ public class Main {
             beta[i] = vector[i]/matrix[i][i];
             alpha[i][i] = 0;
         }
+        System.out.println("Матрица альфа, после преобразования исходной матрицы");
+        for(int i = 0; i < alpha.length; i++)
+        {
+            for(int j = 0; j < alpha[i].length; j++)
+                System.out.printf("%5.2f\t",alpha[i][j]);
+            System.out.println();
+        }
 
         double[] prevVector = new double[vector.length];
         Arrays.fill(prevVector, 0);
